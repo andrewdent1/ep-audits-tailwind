@@ -219,46 +219,4 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const revealElements = document.querySelectorAll('.scroll-reveal');
-
-            function revealOnScroll() {
-                const viewportHeight = window.innerHeight;
-
-                revealElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const triggerPoint = 50; // Adjust this to trigger earlier or later
-
-                    console.log('Element position:', elementTop);  // Add a log to check the element's position
-
-                    if (elementTop < viewportHeight - triggerPoint) {
-                        element.classList.add('visible');
-                    }
-                });
-            }
-
-            // Listen for scroll events
-            window.addEventListener('scroll', revealOnScroll);
-
-            // Initial check for elements already in view
-            revealOnScroll();
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const hamburger = document.getElementById('hamburger');
-            const navLinks1 = document.getElementById('nav-links1');
-
-            // Toggle the display of the navigation links when the hamburger is clicked
-            hamburger.addEventListener('click', function () {
-                // Only toggle #nav-links1 on screens smaller than 1000px
-                if (window.innerWidth <= 1000) {
-                    navLinks1.classList.toggle('active');
-                }
-            });
-        });
-    </script>
-
 </body>
