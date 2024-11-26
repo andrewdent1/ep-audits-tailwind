@@ -5,3 +5,7 @@
 .active {
     opacity: 1 !important;
 }
+
+.custom-height {
+    height: 80vh;
+}
