@@ -60,9 +60,10 @@
         </nav>
     </header>
 
-    <section id="intro" class="flex flex-col md:flex-row bg-gray-50 px-20">
-        <div id="intro-right" class="w-full md:w-2/5 flex flex-col justify-center pr-6">
-            <h1 class="mt-20 text-5xl lg:text-6xl font-bold mb-10 md:mt-0">Advising on Issues Today to Create a Better
+    <section id="intro" class="relative flex flex-col md:flex-row bg-gray-50 px-20">
+        <div id="intro-right" class="relative w-full md:w-2/5 flex flex-col justify-center pr-6">
+            <h1 class="mt-20 text-5xl lg:text-6xl font-bold mb-10 md:mt-0">Advising on Issues Today to Create a
+                Better
                 Tomorrow
             </h1>
             <button onclick="window.location.href='contact.html'"
@@ -86,7 +87,7 @@
         </div>
     </section>
 
-    <section id="about" class="bg-gray-50 py-12 px-20">
+    <section id="about" class="bg-gray-50 py-36 px-20">
         <h2 class="text-3xl font-bold text-center mb-6 scroll-reveal">
             Do you know what was on your property 50 to 100 years ago?
         </h2>
@@ -121,63 +122,53 @@
         <div id="grid-container" class="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             <div id="grid-item"
                 class="service-item bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                <div class="icon bg-blue-500 text-white p-4 rounded-full mb-6 mx-auto">
-                    <i class="fas fa-cogs text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Phase 1 Testing</h3>
+                <img src="/public/images/service-icon-1.png" alt="" class="w-12 flex mx-auto mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Phase I - ESA</h3>
+                <p class="text-gray-600">A typical Phase I ESA consists of researching the property’s history including
+                    reviewing regulatory files, government databases, aerial photographs, City Directories, and Sanborn
+                    Insurance Maps.</p>
+            </div>
+            <div id="grid-item"
+                class="service-item bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="/public/images/service-icon-2.png" alt="" class="w-12 flex mx-auto mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Phase II - Testing</h3>
+                <p class="text-gray-600">Should a red flag arise during our Phase I ESA, we will recommend Phase II
+                    Testing. Our company performs this testing to determine the presence of contamination or to aid in
+                    ruling out any uncertainty based on our findings.</p>
+            </div>
+            <div id="grid-item"
+                class="service-item bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="/public/images/service-icon-3.png" alt="" class="w-12 flex mx-auto mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Phase III - Contamination Remediation
+                </h3>
                 <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quidem
-                    impedit sit, soluta ipsam eius dignissimos ex, repellat facere quis quod reprehenderit cumque vitae
+                    impedit sit, soluta ipsam eius dignissimos ex, repellat facere quis quod reprehenderit cumque
+                    vitae
                     doloremque. Ipsum debitis at id ab.</p>
             </div>
             <div id="grid-item"
                 class="service-item bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                <div class="icon bg-green-500 text-white p-4 rounded-full mb-6 mx-auto">
-                    <i class="fas fa-chart-line text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Phase II Testing</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quidem
-                    impedit sit, soluta ipsam eius dignissimos ex, repellat facere quis quod reprehenderit cumque vitae
-                    doloremque. Ipsum debitis at id ab.</p>
+                <img src="/public/images/service-icon-4.png" alt="" class="w-12 flex mx-auto mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Remediation Design & Management</h3>
+                <p class="text-gray-600">If contaminants are found, EPAI will design and manage all aspects of the
+                    project including; developing a plan of action, coordinating and managing all remediation
+                    subcontractors, etc.</p>
             </div>
             <div id="grid-item"
                 class="service-item bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                <div class="icon bg-orange-500 text-white p-4 rounded-full mb-6 mx-auto">
-                    <i class="fas fa-laptop-code text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Phase III Testing</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quidem
-                    impedit sit, soluta ipsam eius dignissimos ex, repellat facere quis quod reprehenderit cumque vitae
-                    doloremque. Ipsum debitis at id ab.</p>
+                <img src="/public/images/service-icon-5.png" alt="" class="w-12 flex mx-auto mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Proerty Condition Assessment</h3>
+                <p class="text-gray-600">The scope of all engineering and property condition work shall include a
+                    physical inspection of the property including a review of any pertinent documentation located on
+                    site.</p>
             </div>
             <div id="grid-item"
                 class="service-item bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                <div class="icon bg-red-500 text-white p-4 rounded-full mb-6 mx-auto">
-                    <i class="fas fa-laptop-code text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Remediation Design & Management</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quidem
-                    impedit sit, soluta ipsam eius dignissimos ex, repellat facere quis quod reprehenderit cumque vitae
-                    doloremque. Ipsum debitis at id ab.</p>
-            </div>
-            <div id="grid-item"
-                class="service-item bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                <div class="icon bg-yellow-500 text-white p-4 rounded-full mb-6 mx-auto">
-                    <i class="fas fa-users text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Proerty Condition Assessment</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quidem
-                    impedit sit, soluta ipsam eius dignissimos ex, repellat facere quis quod reprehenderit cumque vitae
-                    doloremque. Ipsum debitis at id ab.</p>
-            </div>
-            <div id="grid-item"
-                class="service-item bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                <div class="icon bg-purple-500 text-white p-4 rounded-full mb-6 mx-auto">
-                    <i class="fas fa-bullhorn text-3xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Pollutant Storage Tank Removal</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quidem
-                    impedit sit, soluta ipsam eius dignissimos ex, repellat facere quis quod reprehenderit cumque vitae
-                    doloremque. Ipsum debitis at id ab.</p>
+                <img src="/public/images/service-icon-6.png" alt="" class="w-12 flex mx-auto mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Pollutant Storage Tank Removal</h3>
+                <p class="text-gray-600">They are easy to ignore due to “out of sight out of mind.” Tanks with a
+                    capacity of 1,100 gallons or less are exempt from federal regulation and each individual state has
+                    their own mandates.</p>
             </div>
         </div>
         <div class="text-center mt-16">
@@ -261,12 +252,13 @@
                     <h2 class="text-3xl font-semibold text-gray-800 mb-6">Our Location</h2>
                     <div class="text-lg text-gray-600 mb-6">
                         <p>We are located at:</p>
-                        <address>1234 Business Rd., Suite 100, City, State, 12345</address>
-                        <p class="mt-4">For inquiries, call us at <span class="font-bold">1-800-123-4567</span></p>
+                        <address>12700 Biscayne Blvd., Suite 401</address>
+                        <address>North Miami, FL 33181</address>
+                        <p class="mt-4">For inquiries, call us at <span class="font-bold">1-800-404-0443</span></p>
                     </div>
                     <div class="w-full h-64 bg-gray-300 rounded-md shadow-md mb-4">
                         <iframe class="w-full h-full rounded-md"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122.727052635585!2d-77.03686808463634!3d38.89767697731593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b3a8d9b09333%3A0x2026eac50d505efb!2sThe%20White%20House!5e0!3m2!1sen!2sus!4v1623673668463!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.018534217916!2d-80.19240082495074!3d25.80296260689958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6aad09d7a75%3A0xf5b874f4c87be8a3!2s2700%20Biscayne%20Blvd%20%23401%2C%20Miami%2C%20FL%2033137!5e0!3m2!1sen!2sus!4v1732733800922!5m2!1sen!2sus"
                             allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
@@ -276,7 +268,7 @@
 
     <footer class="bg-green-900 text-white py-8">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex md:flex-cols justify-between gap-8">
                 <div class="footer-section-1">
                     <div class="footer-logo mb-6 w-80">
                         <a href="index.html">
@@ -284,7 +276,7 @@
                         </a>
                     </div>
                 </div>
-                <div id="quick-links" class="text-white">
+                <div id="quick-links" class="text-white hidden xl:block">
                     <h3 class="text-xl font-semibold mb-4 text-grey-200">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="index.html" class="hover:text-white">Home</a></li>
@@ -297,7 +289,7 @@
                 <div id="footer-contact" class="text-white">
                     <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
                     <div class="flex items-start mb-4">
-                        <img src="Images/location-white.png" alt="Location Icon" class="w-6 h-6 mr-4">
+                        <img src="/public/images/location-white.png" alt="Location Icon" class="w-6 h-6 mr-4">
                         <div>
                             <p>12700 Biscayne Blvd., Suite 401</p>
                             <p>North Miami, FL 33181</p>
@@ -306,7 +298,7 @@
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <img src="Images/phone-white.png" alt="Phone Icon" class="w-6 h-6 mr-4">
+                        <img src="/public/images/phone-white.png" alt="Phone Icon" class="w-6 h-6 mr-4">
                         <div>
                             <p>Toll Free: 1-800-404-0443</p>
                             <p>Miami Office: 305-895-9788</p>
@@ -315,7 +307,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom mt-8 border-t border-gray-600 pt-4 text-center text-sm text-gray-400">
+            <div class="footer-bottom mt-8 border-t border-gray-400 pt-4 text-center text-sm text-gray-200">
                 <p>© Copyright 2024 Environmental Property Audits Inc.</p>
                 <p>Site produced and managed by <a href="https://spacecoastwebdev.com/"
                         class="text-blue-400 hover:text-white">Space Coast Web Development</a></p>
