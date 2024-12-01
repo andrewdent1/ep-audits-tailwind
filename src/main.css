@@ -30,13 +30,12 @@
 }
 
 .slide {
-    flex-shrink: 0;
-    width: 25vw;
     margin-right: 5vw;
     object-fit: cover;
     background: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
     border-radius: 5px;
+    min-width: 400px;
 }
 
 /* Alternate heights for images */
