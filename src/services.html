@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the homepage of Environmental Property Audits.">
     <link href="./dist/output.css" rel="stylesheet">
-    <title>About Us | Environmental Property Audits</title>
+    <title>Services | Environmental Property Audits</title>
     <link href="../dist/styles.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/public/images/ep-audits-icon.png">
+    <link rel="icon" type="image/png" href="/images/ep-audits-icon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,24 +136,4 @@
         </div>
     </footer>
 
-    <script>
-        const images = document.querySelectorAll('#intro-left img');
-        let currentImageIndex = 0;
-
-        function showNextImage() {
-            images[currentImageIndex].classList.remove('active');
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            images[currentImageIndex].classList.add('active');
-        }
-
-        images[currentImageIndex].classList.add('active');
-
-        setInterval(showNextImage, 3000);
-    </script>
-    <script>
-        document.querySelector('#hamburger').addEventListener('click', () => {
-            const navLinks = document.querySelector('#nav-links1');
-            navLinks.classList.toggle('hidden');
-        });
-    </script>
 </body>
