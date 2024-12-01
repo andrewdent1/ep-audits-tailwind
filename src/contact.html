@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the homepage of Environmental Property Audits.">
     <link href="./dist/output.css" rel="stylesheet">
-    <title>Services | Environmental Property Audits</title>
+    <title>Home | Environmental Property Audits</title>
     <link href="../dist/styles.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/images/ep-audits-icon.png">
+    <link rel="icon" type="image/png" href="public/images/ep-audits-icon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,44 +60,50 @@
         </nav>
     </header>
 
-    <section id="intro" class="p-10">
-        <div class="container mx-auto text-center">
-            <h1 class="text-center font-bold text-4xl mb-10">Our Services</h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 scroll-reveal">
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg cursor-pointer service-box"
-                    onclick="showDetails(0)">
-                    Phase I ESA
+    <section class="contact-section py-24 bg-gray-50 gap-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row lg:space-x-8 gap-16">
+                <!-- Client Left Section -->
+                <div class="client-left w-full lg:w-1/2 mb-8 lg:mb-0">
+                    <h2 class="text-3xl font-semibold text-gray-800 mb-6">Contact Us</h2>
+                    <p class="text-lg text-gray-600 mb-6">If you have any questions or would like to get in touch with
+                        us, please don't hesitate to reach out.</p>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div class="flex flex-col">
+                            <label for="name" class="text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" class="p-3 border border-gray-300 rounded-md"
+                                required>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="email" class="text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" class="p-3 border border-gray-300 rounded-md"
+                                required>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="message" class="text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="mb-4 p-3 border border-gray-300 rounded-md" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-green-700 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-800 transition w-48">Send
+                            Message</button>
+                    </form>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg cursor-pointer service-box"
-                    onclick="showDetails(1)">
-                    Phase II Testing
+
+                <div class="client-right w-full lg:w-1/2">
+                    <h2 class="text-3xl font-semibold text-gray-800 mb-6">Our Location</h2>
+                    <div class="text-lg text-gray-600 mb-6">
+                        <p>We are located at:</p>
+                        <address>12700 Biscayne Blvd., Suite 401</address>
+                        <address>North Miami, FL 33181</address>
+                        <p class="mt-4">For inquiries, call us at <span class="font-bold">1-800-404-0443</span></p>
+                    </div>
+                    <div class="w-full h-64 bg-gray-300 rounded-md shadow-md mb-4">
+                        <iframe class="w-full h-full rounded-md"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.018534217916!2d-80.19240082495074!3d25.80296260689958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6aad09d7a75%3A0xf5b874f4c87be8a3!2s2700%20Biscayne%20Blvd%20%23401%2C%20Miami%2C%20FL%2033137!5e0!3m2!1sen!2sus!4v1732733800922!5m2!1sen!2sus"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg cursor-pointer service-box"
-                    onclick="showDetails(2)">
-                    Remediation Design & Management
-                </div>
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg cursor-pointer service-box"
-                    onclick="showDetails(3)">
-                    Property Condition Assessment
-                </div>
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg cursor-pointer service-box"
-                    onclick="showDetails(4)">
-                    Pollutant Storage Tank Removal
-                </div>
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg cursor-pointer service-box"
-                    onclick="showDetails(5)">
-                    Additional Services
-                </div>
-            </div>
-        </div>
-        <div id="details-container"
-            class="hidden flex-col md:flex-row bg-white p-8 mt-12 rounded-lg shadow-lg items-center">
-            <div class="details-text md:w-1/2">
-                <h2 id="service-header" class="text-2xl font-semibold text-blue-600 mb-4"></h2>
-                <div id="service-paragraphs" class="space-y-4 text-gray-700"></div>
-            </div>
-            <div class="details-image md:w-1/2 mt-6 md:mt-0">
-                <img id="service-image" src="" alt="Service Image" class="rounded-lg shadow-md w-full">
             </div>
         </div>
     </section>
@@ -152,23 +158,23 @@
     </footer>
 
     <script>
-        document.getElementById("hamburger").addEventListener("click", function () {
-            const menu = document.getElementById("mobile-menu");
-            menu.classList.toggle("hidden");
-        });
+        const images = document.querySelectorAll('#intro-left img');
+        let currentImageIndex = 0;
 
-        const services = [
-            { title: "Phase I ESA", paragraphs: ["Description goes here"], image: "Images/service-img-3.png" },
-            // Add other service details here
-        ];
-
-        function showDetails(index) {
-            const service = services[index];
-            document.getElementById("service-header").textContent = service.title;
-            document.getElementById("service-paragraphs").innerHTML = service.paragraphs.map(p => `<p>${p}</p>`).join('');
-            document.getElementById("service-image").src = service.image;
-            document.getElementById("details-container").classList.remove("hidden");
+        function showNextImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
         }
-    </script>
 
+        images[currentImageIndex].classList.add('active');
+
+        setInterval(showNextImage, 3000);
+    </script>
+    <script>
+        document.querySelector('#hamburger').addEventListener('click', () => {
+            const navLinks = document.querySelector('#nav-links1');
+            navLinks.classList.toggle('hidden');
+        });
+    </script>
 </body>
