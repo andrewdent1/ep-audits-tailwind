@@ -11,7 +11,7 @@
 }
 
 #about {
-    background-color: #9ebd9e7c;
+    background-color: #9ebd9e51;
 }
 
 .slideshow-container {
@@ -57,4 +57,20 @@
         transform: translateX(-111%);
         /* Move the entire slideshow container to the left */
     }
+}
+
+.abt-img {
+    width: 30vw;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+}
+
+#about-page p {
+    line-height: 35px;
+    font-size: larger;
+}
+
+.services-grid div {
+    background-color: #9ebd9e51;
 }

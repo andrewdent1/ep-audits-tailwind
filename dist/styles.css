@@ -938,8 +938,8 @@ video {
      object-fit: contain;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-12 {
+  padding: 3rem;
 }
 
 .p-3 {
@@ -1036,11 +1036,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -1165,7 +1160,7 @@ video {
 }
 
 #about {
-  background-color: #9ebd9e7c;
+  background-color: #9ebd9e51;
 }
 
 .slideshow-container {
@@ -1213,6 +1208,22 @@ video {
     transform: translateX(-111%);
     /* Move the entire slideshow container to the left */
   }
+}
+
+.abt-img {
+  width: 30vw;
+  margin: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+}
+
+#about-page p {
+  line-height: 35px;
+  font-size: larger;
+}
+
+.services-grid div {
+  background-color: #9ebd9e51;
 }
 
 .hover\:scale-105:hover {

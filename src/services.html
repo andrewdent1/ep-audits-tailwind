@@ -60,10 +60,10 @@
         </nav>
     </header>
 
-    <section id="intro" class="p-10">
+    <section id="intro" class="mt-20 px-10">
         <div class="container mx-auto text-center">
-            <h1 class="text-center font-bold text-4xl mb-10">Our Services</h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 scroll-reveal">
+            <h1 class="text-center font-bold text-5xl mb-10">Our Services</h1>
+            <div class="services-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 scroll-reveal">
                 <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg cursor-pointer service-box"
                     onclick="showDetails(0)">
                     Phase I ESA
@@ -159,7 +159,11 @@
 
         const services = [
             { title: "Phase I ESA", paragraphs: ["Description goes here"], image: "Images/service-img-3.png" },
-            // Add other service details here
+            { title: "Phase II Testing", paragraphs: ["Description goes here"], image: "Images/service-img-3.png" },
+            { title: "Phase III - Contamination Remediation", paragraphs: ["Description goes here"], image: "Images/service-img-3.png" },
+            { title: "Remediation Design & Management", paragraphs: ["Description goes here"], image: "Images/service-img-3.png" },
+            { title: "Property Condition Assessment", paragraphs: ["Description goes here"], image: "Images/service-img-3.png" },
+            { title: "Pollutant Storage Tank Removal", paragraphs: ["Description goes here"], image: "Images/service-img-3.png" },
         ];
 
         function showDetails(index) {
