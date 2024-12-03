@@ -59,11 +59,21 @@
     }
 }
 
-.abt-img {
-    width: 30vw;
+.abt-img-1 {
+    min-width: 30vw;
+    max-width: 80vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+    margin-left: 50px;
+}
+
+.abt-img-2 {
+    width: 150%;
     margin: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+    margin-right: 50px;
 }
 
 #about-page p {

@@ -609,8 +609,17 @@ video {
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .mb-16 {
@@ -669,6 +678,10 @@ video {
   margin-top: 2rem;
 }
 
+.ml-\[50px\] {
+  margin-left: 50px;
+}
+
 .block {
   display: block;
 }
@@ -721,6 +734,10 @@ video {
   height: 100%;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .max-h-\[90\%\] {
   max-height: 90%;
 }
@@ -757,6 +774,10 @@ video {
   min-width: 12rem;
 }
 
+.min-w-\[30vw\] {
+  min-width: 30vw;
+}
+
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -767,6 +788,22 @@ video {
 
 .max-w-\[90\%\] {
   max-width: 90%;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-\[80vw\] {
+  max-width: 80vw;
+}
+
+.max-w-\[60vw\] {
+  max-width: 60vw;
+}
+
+.max-w-\[65vw\] {
+  max-width: 65vw;
 }
 
 .transform {
@@ -863,6 +900,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -873,6 +914,10 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
 .border {
@@ -1008,6 +1053,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1125,6 +1175,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[0_4px_8px_rgba\(0\2c 0\2c 0\2c 0\.33\)\] {
+  --tw-shadow: 0 4px 8px rgba(0,0,0,0.33);
+  --tw-shadow-colored: 0 4px 8px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1210,11 +1266,21 @@ video {
   }
 }
 
-.abt-img {
-  width: 30vw;
+.abt-img-1 {
+  min-width: 30vw;
+  max-width: 80vw;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+  margin-left: 50px;
+}
+
+.abt-img-2 {
+  width: 150%;
   margin: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+  margin-right: 50px;
 }
 
 #about-page p {
@@ -1232,9 +1298,37 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-\[1\.1\]:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:rounded-\[5px\]:hover {
+  border-radius: 5px;
+}
+
 .hover\:bg-green-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(22 101 52 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#f7f7f7\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:p-4:hover {
+  padding: 1rem;
+}
+
+.hover\:p-2:hover {
+  padding: 0.5rem;
+}
+
+.hover\:px-2:hover {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .hover\:text-blue-600:hover {
@@ -1245,6 +1339,11 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\#132A13\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(19 42 19 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover {
@@ -1328,6 +1427,10 @@ video {
     width: 50%;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1353,7 +1456,27 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:ml-\[50px\] {
+    margin-left: 50px;
+  }
+
+  .xl\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .xl\:block {
     display: block;
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 }
