@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the homepage of Environmental Property Audits.">
     <link href="./dist/output.css" rel="stylesheet">
-    <title>Home | Environmental Property Audits</title>
+    <title>Services | Environmental Property Audits</title>
     <link href="../dist/styles.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/public/images/ep-audits-icon.png">
     <link rel="stylesheet" href="styles.css">
@@ -16,11 +16,11 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sawarabi+Mincho&display=swap"
         rel="stylesheet">
     <style>
-        #intro {
+        #intro1 {
             padding: 50px 100px;
         }
 
-        #intro h1 {
+        #intro1 h1 {
             text-align: center;
             font-size: 3rem;
             padding: 25px 0 50px 0;
@@ -35,7 +35,6 @@
         }
 
         .service-box {
-            width: 16%;
             height: 80px;
             display: flex;
             align-items: center;
@@ -49,6 +48,7 @@
             transition: transform 0.3s, background-color 0.3s;
             flex-grow: 1;
             font-weight: 500;
+            padding: 10px;
         }
 
         .service-box:hover {
@@ -77,7 +77,6 @@
             display: flex;
             flex-direction: row;
             gap: 20px;
-            max-height: 70vh;
         }
 
         .details-text {
@@ -123,16 +122,6 @@
                 display: none;
             }
         }
-
-        @media (max-width: 1000px) {
-            .details-container {
-                max-height: 150vh;
-            }
-        }
-
-        footer {
-            margin-top: 33vh;
-        }
     </style>
 </head>
 
@@ -154,8 +143,7 @@
                 <!-- Navigation Links -->
                 <div id="nav-links1"
                     class="block md:hidden flex-col md:flex-row md:flex space-y-4 md:space-y-0 md:space-x-6">
-                    <a href="index.html"
-                        class="text-white hover:scale-[1.1] hover:bg-[#f7f7f7] hover:text-[#132A13] hover:rounded-[5px]">Home</a>
+                    <a href="index.html" class="text-white hover:underline">Home</a>
                     <a href="about.html" class="text-white hover:underline">About Us</a>
                     <a href="services.html" class="text-white hover:underline">Services</a>
                     <a href="clients.html" class="text-white hover:underline">Clients</a>
@@ -171,30 +159,26 @@
         <!-- Secondary Navigation for Larger Screens -->
         <nav class="bg-green-700 hidden md:block py-2">
             <div class="flex justify-center space-x-6">
-                <a href="index.html"
-                    class="text-white hover:scale-[1.1] hover:bg-[#f7f7f7] hover:text-[#132A13] hover:rounded-[5px] hover:px-2">Home</a>
-                <a href="about.html"
-                    class="text-white hover:scale-[1.1] hover:bg-[#f7f7f7] hover:text-[#132A13] hover:rounded-[5px] hover:px-2">About
-                    Us</a>
-                <a href="services.html"
-                    class="text-white hover:scale-[1.1] hover:bg-[#f7f7f7] hover:text-[#132A13] hover:rounded-[5px] hover:px-2">Services</a>
-                <a href="clients.html"
-                    class="text-white hover:scale-[1.1] hover:bg-[#f7f7f7] hover:text-[#132A13] hover:rounded-[5px] hover:px-2">Clients</a>
-                <a href="contact.html"
-                    class="text-white hover:scale-[1.1] hover:bg-[#f7f7f7] hover:text-[#132A13] hover:rounded-[5px] hover:px-2">Contact</a>
+                <a href="index.html" class="text-white hover:underline">Home</a>
+                <a href="about.html" class="text-white hover:underline">About Us</a>
+                <a href="services.html" class="text-white hover:underline">Services</a>
+                <a href="clients.html" class="text-white hover:underline">Clients</a>
+                <a href="contact.html" class="text-white hover:underline">Contact</a>
             </div>
         </nav>
     </header>
 
-    <section id="intro">
+    <section id="intro1">
         <h1 class="scroll-reveal font-bold">Our Services</h1>
-        <div class="services-container scroll-reveal">
-            <div class="service-box" onclick="showDetails(0)">Phase I ESA</div>
-            <div class="service-box" onclick="showDetails(1)">Phase II Testing</div>
-            <div class="service-box" onclick="showDetails(2)">Remediation Design & Management</div>
-            <div class="service-box" onclick="showDetails(3)">Property Condition Assessment</div>
-            <div class="service-box" onclick="showDetails(4)">Pollutant Storage Tank Removal</div>
-            <div class="service-box" onclick="showDetails(5)">Additional Services</div>
+        <div class="services-container scroll-reveal grid gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="service-box" onclick="showDetails(0)">Phase I ESA</div>
+                <div class="service-box" onclick="showDetails(1)">Phase II Testing</div>
+                <div class="service-box" onclick="showDetails(2)">Remediation Design & Management</div>
+                <div class="service-box" onclick="showDetails(3)">Property Condition Assessment</div>
+                <div class="service-box" onclick="showDetails(4)">Pollutant Storage Tank Removal</div>
+                <div class="service-box" onclick="showDetails(5)">Additional Services</div>
+            </div>
         </div>
         <div class="details-container scroll-reveal" id="details-container">
             <div class="details-text">
@@ -210,7 +194,6 @@
                 <p id="service-paragraph9"></p>
                 <p id="service-paragraph10"></p>
                 <p id="service-paragraph11"></p>
-                <p id="service-paragraph12"></p>
             </div>
             <div class="details-image">
                 <img id="service-image" src="" alt="Service Image">
@@ -345,7 +328,6 @@
             const paragraph9 = document.getElementById('service-paragraph9');
             const paragraph10 = document.getElementById('service-paragraph10');
             const paragraph11 = document.getElementById('service-paragraph11');
-            const paragraph12 = document.getElementById('service-paragraph12');
             const image = document.getElementById('service-image');
 
             const service = services[index];
@@ -363,7 +345,6 @@
             paragraph9.textContent = service.paragraphs[8];
             paragraph10.textContent = service.paragraphs[9];
             paragraph11.textContent = service.paragraphs[10];
-            paragraph12.textContent = service.paragraphs[11];
             image.src = service.image;
 
             // Display details container
