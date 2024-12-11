@@ -18,33 +18,38 @@
 </head>
 
 <header>
-    <nav class="bg-green-950 flex justify-between items-center px-6 py-4 h-[20vh]">
+    <nav class="bg-green-950 flex justify-between items-center px-6 py-4 h-[12vh]">
         <div>
             <a href="index.html">
                 <img src="/public/images/ep-audits-logo.png" alt="Environmental Property Audits Logo"
-                    class="h-12 md:20">
+                    class="h-16 md:24">
             </a>
         </div>
-        <div class="flex items-center space-x-4 absolute">
-            <h1 class="hidden md:block font-light text-xl text-white">1-800-404-0443</h1>
-            <div class="md:hidden absolute left-0 top-48 w-full px-5">
-                <ul id="nav-links1"
-                    class="hidden md:flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-4 bg-black">
-                    <li><a class="text-white hover:underline" href="">Home</a></li>
-                    <li><a class="text-white hover:underline" href="">About</a></li>
-                    <li><a class="text-white hover:underline" href="">Services</a></li>
-                    <li><a class="text-white hover:underline" href="">Clients</a></li>
-                    <li><a class="text-white hover:underline" href="">Contact</a></li>
-                </ul>
+        <div class="flex items-center space-x-4">
+            <div class="relative">
+                <div class="md:hidden absolute px-5">
+                    <ul id="nav-links1"
+                        class="absolute top-[6vh] left-[5vw] flex flex-col align-baseline md:hidden px-10 py-4 rounded-md gap-4 w-[100vw] bg-green-900">
+                        <li><a class="text-white hover:underline" href="index.html">Home</a></li>
+                        <li><a class="text-white hover:underline" href="about.html">About</a></li>
+                        <li><a class="text-white hover:underline" href="services.html">Services</a></li>
+                        <li><a class="text-white hover:underline" href="clients.html">Clients</a></li>
+                        <li><a class="text-white hover:underline" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <a href="https://www.facebook.com/profile.php?id=100072187024873" target="_blank">
-            <img src="/public/images/fb-logo.png" alt="Facebook Logo" class="h-8 w-8 rounded hidden md:block">
-        </a>
+        <div class="flex flex-row gap-10">
+            <h1 class="hidden md:block font-light text-xl text-white">1-800-404-0443</h1>
+            <a href="https://www.facebook.com/profile.php?id=100072187024873" target="_blank">
+                <img src="/public/images/fb-logo.png" alt="Facebook Logo" class="h-8 w-8 rounded hidden md:block">
+            </a>
         </div>
         <ion-icon id="hamburger" name="menu-outline" class="text-3xl cursor-pointer md:hidden"
             style="color: white;"></ion-icon>
     </nav>
+
+
     <nav class="bg-green-700 hidden md:block py-2">
         <div class="flex justify-center space-x-6">
             <a href="index.html" class="text-white hover:underline">Home</a>
@@ -56,8 +61,8 @@
     </nav>
 </header>
 
-<section id="intro" class="relative flex flex-col md:flex-row bg-gray-50 px-20">
-    <div id="intro-right" class="relative w-full md:w-2/5 flex flex-col justify-center pr-6">
+<section id="intro" class="flex flex-col md:flex-row bg-gray-50 px-20">
+    <div id="intro-right" class="w-full md:w-2/5 flex flex-col justify-center pr-6">
         <h1 class="mt-20 text-5xl lg:text-6xl font-bold mb-10 md:mt-0">Advising on Issues Today to Create a
             Better
             Tomorrow
