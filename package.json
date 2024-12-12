@@ -2,7 +2,7 @@
   "name": "ep-audits-tailwind",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://andrewdent1.github.io/ep-audits-tailwind",
+  "homepage": "https://andrewdent1.github.io/ep-audits-tailwind/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "npx tailwindcss -i ./src/main.css -o ./dist/styles.css --watch",
